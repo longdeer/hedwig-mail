@@ -99,6 +99,7 @@ class Distribution(MyBuilder):
 	class to(RecipientField):		field_value = loads(getenv("DISTRIBUTION_RECIPIENT_FIELD_VALUE"))
 	class body(BodyField):			field_value = getenv("DISTRIBUTION_BODY_FIELD_VALUE")
 	class target(AttachmentField):	pass
+	class extra(AttachmentField):	pass
 
 
 

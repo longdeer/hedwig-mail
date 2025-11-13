@@ -17,7 +17,8 @@ if	__name__ == "__main__":
 
 		load_dotenv()
 		hedwig = Distribution(LibraryContrib(init_name="distribution"))
-		hedwig.target.field_value = getenv("DISTRIBUTION_ATTACHMENT")
+		hedwig.target.field_value = getenv("DISTRIBUTION_ATTACHMENT_1")
+		hedwig.extra.field_value = getenv("DISTRIBUTION_ATTACHMENT_2")
 		hedwig.build()
 
 	except Exception as E : print(patronus(E))
